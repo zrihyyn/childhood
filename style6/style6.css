@@ -138,7 +138,7 @@ body {
   color: black;
 }
 
-.text, .ad, .thanksto, .colophon {
+.text, .ad, .thanksto, .colophon, .home-button {
   pointer-events: auto;
 }
 
