@@ -298,34 +298,35 @@ body {
   }
   .text {
     top: 5vh;
-    left: 8vw;
-    width: 44vw;
-    height: 30vh;
+    left: 16vw;
+    width: 65vw;
+    height: 41vh;
     transform: rotate(0deg);
     padding: 10px;
     font-size: 0.7rem;
   }
   .ad {
-    top: 42vh;
+    top: 65vh;
     left: 5vw;
     width: 90vw;
+    height: 8vh;
     padding: 8px;
-    transform: rotate(-3deg);
+    transform: rotate(2deg);
   }
   .thanksto {
-    top: 12vh;
-    left: 52vw;
-    width: 40vw;
-    height: 25vh;
+    top: 50vh;
+    left: 49vw;
+    width: 45vw;
+    height: 13vh;
     font-size: 0.85rem;
-    transform: rotate(-6deg);
+    transform: rotate(0deg);
   }
   .colophon {
-    top: 55vh;
-    left: 7vw;
-    width: 85vw;
-    height: 40vh;
-    transform: rotate(0deg);
+    top: 73vh;
+    left: 35vw;
+    width: 48vw;
+    height: 20vh;
+    transform: rotate(-7deg);
   }
   .home-button {
     width: 25px;
