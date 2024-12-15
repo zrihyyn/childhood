@@ -140,23 +140,23 @@ a:hover {
 
 
 .home-button {
-    position: fixed; /* 화면 구석에 위치하기 위해 절대 위치 지정 */
-    top: 20px; /* 화면 위쪽에서 약간 내려옴 */
-    right: 20px; /* 화면 오른쪽에서 약간 떨어짐 */
-    width: 40px; /* 버튼 크기 */
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    width: 40px;
     height: 40px;
     background: conic-gradient(
         rgb(41, 112, 41) 0deg 90deg,
         rgb(246, 43, 43) 90deg 180deg,
         rgb(76, 76, 198) 180deg 270deg,
         rgb(255, 187, 0) 270deg 360deg
-      ); /* 흰색 배경 */
-    border-radius: 50%; /* 동그란 모양 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
-    display: flex; /* 가운데 정렬을 위한 Flexbox */
+      ); 
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; 
     align-items: center;
     justify-content: center;
-    z-index: 10; /* 다른 요소 위에 표시되도록 */
+    z-index: 10;
     transition: all 0.3s ease;
 
     a {
@@ -168,14 +168,14 @@ a:hover {
         text-decoration: none;
 
         img {
-            width:60%; /* 아이콘 크기 */
+            width:60%; 
             height: 60%;
         }
     }
 
     &:hover {
-        background-color: #f0f0f0; /* 호버 시 약간 어두운 배경 */
-        transform: scale(1.1); /* 크기 확대 */
+        background-color: #f0f0f0;
+        transform: scale(1.1);
     }
 }
 
@@ -247,9 +247,9 @@ a:hover {
     } 
     
 
-    /* 기본적인 모바일 반응형 디자인 */
+    
 @media screen and (max-width: 800px) {
-    /* 사이드바 */
+
     .sidebar {
         position: relative;
         width: 100%;
@@ -260,30 +260,30 @@ a:hover {
         border-bottom: 2px dotted black;
     }
 
-    /* 컨텐츠 영역 */
+    
     .container {
         margin: auto;
-        padding-right: 20px; /* 오른쪽 여백 추가 */
-        padding-left: 20px; /* 왼쪽 여백 추가 */
+        padding-right: 20px;
+        padding-left: 20px; 
     }
 
-    /* 제목 크기 조정 */
+    
     h2 {
-        font-size: 24px; /* 작은 화면에서 더 작은 글씨 */
+        font-size: 24px; 
     }
 
     .title, .title1 {
-        font-size: 32px; /* 제목 크기 조정 */
+        font-size: 32px;
         margin-top: 50px;
         margin-bottom: 20px;
     }
 
-    /* 사이드바 p 태그 */
+   
     .sidebar p {
-        font-size: 20px; /* 작은 화면에서는 텍스트 크기 감소 */
+        font-size: 20px;
     }
 
-    /* 홈 버튼 크기 감소 */
+   
     .home-button {
         width: 35px;
         height: 35px;
@@ -296,7 +296,7 @@ a:hover {
         }
     }
 
-    /* 오버레이 텍스트 크기 */
+   
     .opening-overlay p {
         font-size: 1.5rem;
     }
@@ -304,12 +304,12 @@ a:hover {
 
 /* 더 작은 화면 (예: 480px 이하) */
 @media screen and (max-width: 480px) {
-    /* 사이드바 텍스트 */
+    
     .sidebar p {
-        font-size: 12px; /* 텍스트 크기 더 줄이기 */
+        font-size: 12px; 
     }
 
-    /* 제목 크기 더 줄이기 */
+   
     h2 {
         font-size: 20px;
     }
@@ -318,7 +318,7 @@ a:hover {
         font-size: 28px;
     }
 
-    /* 홈 버튼 크기 더 줄이기 */
+
     .home-button {
         width: 30px;
         height: 30px;
@@ -331,12 +331,11 @@ a:hover {
         }
     }
 
-    /* 오버레이 텍스트 크기 더 줄이기 */
+    
     .opening-overlay p {
         font-size: 1.2rem;
     }
-
-    /* 제목 상단 마진 조정 */
+   
     .title, .title1 {
         margin-top: 40px;
     }

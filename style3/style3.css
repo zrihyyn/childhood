@@ -38,15 +38,15 @@ body {
   transition: all 0.6s;
   box-sizing: border-box;
   overflow: auto;
-  justify-content: center; /* 수직 중앙 정렬 */
+  justify-content: center;
 }
 .column .img {
   border: 1px dashed black;
   padding: 15px;
-  display: block; /* 변경 가능 */
+  display: block;
   position: relative;
   width: 70%;
-  margin: 0 auto; /* 추가로 수평 중앙정렬 보장 */
+  margin: 0 auto;
 }
 .column .img:hover + .hover-text {
   visibility: visible;
@@ -113,6 +113,17 @@ p {
   background-color: #ffffae;
   border-radius: 10px;
 }
+.interview .ques1f {
+  text-align: left;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  border: 1px solid #000;
+  background-color: #dada5e;
+  border-radius: 10px;
+  margin-left: 2vh;
+}
 .interview .ques2 {
   text-align: left;
   padding: 8px;
@@ -123,6 +134,18 @@ p {
   background-color: #9a6161;
   color: #000;
   border-radius: 10px;
+}
+.interview .ques2f {
+  text-align: left;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  border: 1px solid #361c1c;
+  background-color: #713c3c;
+  color: #000;
+  border-radius: 10px;
+  margin-left: 2vh;
 }
 .interview .ques3 {
   text-align: left;
@@ -135,6 +158,18 @@ p {
   color: #31253e;
   border-radius: 10px;
 }
+.interview .ques3f {
+  text-align: left;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  border: 1px solid #2a3f53;
+  background-color: #6794b7;
+  color: #241633;
+  border-radius: 10px;
+  margin-left: 2vh;
+}
 .interview .ques4 {
   text-align: left;
   padding: 8px;
@@ -145,6 +180,18 @@ p {
   background-color: #3d4d3e;
   color: #b4c1af;
   border-radius: 10px;
+}
+.interview .ques4f {
+  text-align: left;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  border: 1px solid #0d1710;
+  background-color: #1b381d;
+  color: #679256;
+  border-radius: 10px;
+  margin-left: 2vh;
 }
 .interview .ques5 {
   text-align: left;
@@ -157,6 +204,18 @@ p {
   color: #521b00;
   border-radius: 10px;
 }
+.interview .ques5f {
+  text-align: left;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  border: 1px solid #56a93f;
+  background-color: #dad898;
+  color: #b34b17;
+  border-radius: 10px;
+  margin-left: 2vh;
+}
 .interview .ques6 {
   text-align: left;
   padding: 8px;
@@ -168,6 +227,18 @@ p {
   color: #3c263c;
   border-radius: 10px;
 }
+.interview .ques6f {
+  text-align: left;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  border: 1px solid #670e6d;
+  background-color: rgba(151, 118, 156, 0.645);
+  color: #590159;
+  border-radius: 10px;
+  margin-left: 2vh;
+}
 .interview .ques7 {
   text-align: left;
   padding: 8px;
@@ -178,6 +249,18 @@ p {
   background-color: #e4f4d9;
   color: #6f738a;
   border-radius: 10px;
+}
+.interview .ques7f {
+  text-align: left;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 80%;
+  border: 1px solid #5079b6;
+  background-color: #bceb9d;
+  color: #46539c;
+  border-radius: 10px;
+  margin-left: 2vh;
 }
 .interview .ans1 {
   color: #120833;
@@ -253,6 +336,10 @@ p {
   background-color: #909fc1;
   position: relative;
 }
+.column:nth-child(1) img {
+  border: 2px dashed #ffffae;
+  color: #ffffae;
+}
 .column:nth-child(1) .box {
   background-color: rgb(232, 232, 116);
   color: #333;
@@ -262,6 +349,10 @@ p {
   background-color: #491c0f;
   color: red;
   position: relative;
+}
+.column:nth-child(2) img {
+  border: 2px dashed #c70707;
+  color: #c70707;
 }
 .column:nth-child(2) .box {
   background-color: #7c2424;
@@ -273,6 +364,10 @@ p {
   color: #7ad1d1;
   position: relative;
 }
+.column:nth-child(3) img {
+  border: 2px dashed #b3a9ff;
+  color: #b3a9ff;
+}
 .column:nth-child(3) .box {
   background-color: #add8e6;
   color: #000;
@@ -282,6 +377,10 @@ p {
   background: linear-gradient(green, white);
   color: #152d39;
   position: relative;
+}
+.column:nth-child(4) img {
+  border: 2px dashed rgb(65, 65, 0);
+  color: #7e470f;
 }
 .column:nth-child(4) .box {
   background-color: #d3d3d3;
@@ -293,6 +392,10 @@ p {
   background: linear-gradient(white, rgb(255, 255, 255), rgb(255, 151, 77));
   position: relative;
 }
+.column:nth-child(5) img {
+  border: 2px dashed #ff6a00;
+  color: #ff6a00;
+}
 .column:nth-child(5) .box {
   background-color: #e6ffe6;
   color: #006400;
@@ -303,6 +406,10 @@ p {
   background-color: #7f1343;
   position: relative;
 }
+.column:nth-child(6) img {
+  border: 2px dashed #78e767;
+  color: #78e767;
+}
 .column:nth-child(6) .box {
   background-color: #d8bfd8;
   color: #4b0082;
@@ -312,6 +419,10 @@ p {
   color: rgb(47, 145, 160);
   background-color: #ffee00;
   position: relative;
+}
+.column:nth-child(7) img {
+  border: 2px dashed #15335e;
+  color: #15335e;
 }
 .column:nth-child(7) .box {
   background-color: #fffacd;
@@ -408,4 +519,35 @@ p {
   100% {
     opacity: 1;
   }
+}
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: conic-gradient(rgb(41, 112, 41) 0deg 90deg, rgb(246, 43, 43) 90deg 180deg, rgb(76, 76, 198) 180deg 270deg, rgb(255, 187, 0) 270deg 360deg);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.715);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.home-button a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.home-button a img {
+  width: 60%; /* 아이콘 크기 */
+  height: 60%;
+}
+.home-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
 }/*# sourceMappingURL=style3.css.map */
