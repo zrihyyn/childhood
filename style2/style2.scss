@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Comic Neue", cursive;
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .left {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .right {
+    flex: 1; 
+    background-color: #000; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .title{
+    animation: blink 1.5s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  .column {
+    flex: 1; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.6s ease;
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow: hidden;
+  img{
+    display: none;
+    width: 350px;
+    margin: 10px;
+  
+  }
+    &:hover {
+      font-size: 1.1rem;
+    }
+  }
+
+  .column:nth-child(1):hover {
+    flex: 12; 
+  }
+  
+  .column:nth-child(2):hover {
+    flex: 8; 
+    img{
+      width: 300px;
+    }
+  }
+  
+  .column:nth-child(3):hover {
+    flex: 15;
+    img{
+      width: 200px;
+    }
+  }
+  .column:nth-child(4):hover {
+    flex: 7; 
+    img{
+      width: 200px;
+    }
+  }
+
+  .column:nth-child(5):hover {
+    flex: 10; 
+    img{
+      width: 200px;
+    }
+  }
+
+  .column:nth-child(6):hover {
+    flex: 10;
+    img{
+      width: 200px;
+    }
+  }
+
+  .column:nth-child(7):hover {
+    flex: 10; 
+    img{
+      width: 200px;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    cursor: help;
+  }
+
+  .mainimage{
+    width: 40vw;
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .snack-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .interview {
+    display: none;
+    width: 80%; 
+  }
+  
+  .column:hover .interview {
+    display: block; 
+  }
+
+  .column:hover img {
+    display: block; 
+  }
+  
+  
+  .column:nth-child(1) {
+    background-color: #2e5634;
+    color: rgb(112, 225, 148);
+    .interview{
+        color: rgb(125, 170, 97);
+    }
+  }
+  
+  .column:nth-child(2) {
+    background:  #ffa1e9;
+    color: rgb(0, 57, 150);
+    .interview{
+        color: rgb(162, 0, 81);
+    }
+  }
+  
+  .column:nth-child(3) {
+    background: rgb(0, 113, 183);;
+    color: #b8eeff;
+    .interview{
+        color: rgb(152, 200, 202);
+    }
+  }
+  
+  .column:nth-child(4) {
+    background: rgb(255, 255, 255);
+    color: #4000a7;
+  }
+  
+  .column:nth-child(5) {
+    background: rgb(149, 12, 65);
+    color: #b2f2ff;
+  }
+  
+  .column:nth-child(6) {
+    background-color: #3f1616;
+    color: #fffce0;
+}
+  
+  .column:nth-child(7) {
+    background:  linear-gradient(rgb(255, 201, 75), rgb(255, 255, 255));
+    color: rgb(48, 8, 70);
+  }
+  
+  
+  @media (max-width: 768px) {
+    body {
+      height: auto; /* 세로로 스크롤 가능 */
+    }
+  .snack-name{
+    font-size: 1.2rem;
+  }
+    .container {
+      position: relative;
+      flex-direction: column; /* 세로로 나열 */
+    }
+  
+    .left{
+      margin-top: 42vh;
+      flex: 1; /* 각각 같은 비율로 공간 차지 */
+    
+    }
+.right{
+  position: fixed;
+  height: 42vh;
+  img{
+    width: 80vw;
+  }
+}
+  .column{
+    img{
+      width: 50%;
+    }
+    .interview{
+      width: 90vw;
+    }
+  }
+    .column:hover {
+      flex: 2; 
+      font-size: 0.8rem;
+    }
+
+  }
+  
+  .home-button {
+    position: fixed; /* 화면 구석에 위치하기 위해 절대 위치 지정 */
+    top: 20px; /* 화면 위쪽에서 약간 내려옴 */
+    right: 20px; /* 화면 오른쪽에서 약간 떨어짐 */
+    width: 40px; /* 버튼 크기 */
+    height: 40px;
+    background: conic-gradient(
+        rgb(41, 112, 41) 0deg 90deg,
+        rgb(246, 43, 43) 90deg 180deg,
+        rgb(76, 76, 198) 180deg 270deg,
+        rgb(255, 187, 0) 270deg 360deg
+      ); /* 흰색 배경 */
+    border-radius: 50%; /* 동그란 모양 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    display: flex; /* 가운데 정렬을 위한 Flexbox */
+    align-items: center;
+    justify-content: center;
+    z-index: 10; /* 다른 요소 위에 표시되도록 */
+    transition: all 0.3s ease;
+
+    a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        img {
+            width:60%; /* 아이콘 크기 */
+            height: 60%;
+        }
+    }
+
+    &:hover {
+        background-color: #f0f0f0; /* 호버 시 약간 어두운 배경 */
+        transform: scale(1.1); /* 크기 확대 */
+    }
+}
+
+.opening-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  z-index: 1000;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  p{
+      font-family: "Comic Neue", cursive;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+      color: rgb(255, 123, 198);
+  }
+  }
+  
+  .opening-overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+  }
+  
+  .container {
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out;
+  }
+  
+  .container.show {
+  opacity: 1;
+  }
+  
+  @keyframes fadeOut {
+  0% {
+      opacity: 1;
+      visibility: visible;
+  }
+  100% {
+      opacity: 0;
+      visibility: hidden;
+  }
+  }
+  
+  .opening-overlay {
+  animation: fadeOut 2s ease-in-out forwards;
+  animation-delay: 1s; 
+  }
+  
+  .container {
+  animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+  } 
+  

@@ -1,0 +1,193 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  body{
+    font-family: "Comic Neue", cursive;
+    height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    overflow-y: hidden;
+  }
+a{
+    text-decoration: none;
+    color: black;
+}
+  .container{
+    position: relative;
+    display: block;
+    padding: 20px 20vw;
+    font-size: 1.3rem;
+    p{
+        text-align: center;
+    }
+  }
+
+  .opening{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .colophon {
+    display: grid; /* Grid 레이아웃 활성화 */
+    grid-template-columns: 1fr; /* 한 줄에 하나씩 배치 */
+    gap: 20px; /* 각 행 사이 간격 */
+    padding: 20px 30vw; /* 양쪽 여백 추가 */
+  
+    .thanksto {
+      display: flex; /* `.thanksto` 내부는 Flexbox로 정렬 */
+      justify-content:center; /* `.left`와 `.right`를 양 끝으로 배치 */
+      align-items: center; /* 수직 중앙 정렬 */
+      padding: 8px 0; /* `.thanksto` 간격 */
+  
+      p {
+        margin: 0; /* 여백 제거 */
+        line-height: 1.3;
+      }
+  
+      a {
+        text-decoration: none;
+        color: black;
+
+      }
+    }
+  }
+  .survey{
+    background-color: rgb(255, 217, 63);
+    padding: 0px 3px
+  }
+  .left{
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+  }
+ .left1{
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 126px;
+ }
+ .left2{
+  width: 200px;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 19px;
+ }
+  .right{
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .home-button {
+    position: fixed; /* 화면 구석에 위치하기 위해 절대 위치 지정 */
+    top: 20px; /* 화면 위쪽에서 약간 내려옴 */
+    right: 20px; /* 화면 오른쪽에서 약간 떨어짐 */
+    width: 40px; /* 버튼 크기 */
+    height: 40px;
+    background: conic-gradient(
+        rgb(41, 112, 41) 0deg 90deg,
+        rgb(246, 43, 43) 90deg 180deg,
+        rgb(76, 76, 198) 180deg 270deg,
+        rgb(255, 187, 0) 270deg 360deg
+      ); /* 흰색 배경 */
+    border-radius: 50%; /* 동그란 모양 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    display: flex; /* 가운데 정렬을 위한 Flexbox */
+    align-items: center;
+    justify-content: center;
+    z-index: 10; /* 다른 요소 위에 표시되도록 */
+    transition: all 0.3s ease;
+
+    a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        z-index: 1000;
+
+        img {
+            width:60%; /* 아이콘 크기 */
+            height: 60%;
+        }
+    }
+
+    &:hover {
+        background-color: #f0f0f0; /* 호버 시 약간 어두운 배경 */
+        transform: scale(1.1); /* 크기 확대 */
+    }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.box {
+  display: flex;
+  position: fixed; /* 화면 내 고정 */
+  transition: transform 0.25s ease, top 0.25s ease, left 0.25s ease; /* 애니메이션 효과 */
+  img {
+    margin: 0;
+    cursor: zoom-in;
+    transition: transform 0.25s ease; /* 이미지 확대 시 애니메이션 */
+    transform-origin: center center; /* 확대 기준을 중앙으로 설정 */
+  }
+
+  /* 기본 상태에서 이미지 크기 설정 */
+  img {
+    transform: scale(0.8); /* 기본 크기를 80%로 설정 */
+  }
+
+  input[type="checkbox"]:checked ~ label > img {
+    top: 50%;
+    left: 50%;
+    position: fixed; /* 화면 중앙에 고정 */
+    transform: translate(-50%, -50%) scale(2); /* 화면 중앙으로 이동 + 확대 */ /* 확대된 상태에서 크기를 2배로 설정 */
+  }
+}
+
+/* 첫 번째 이미지 (Top right) */
+.box.top-right {
+  top: 45%; /* 초기 위치 설정 (구석) */
+  left: 6%; /* 초기 위치 설정 (구석) */
+}
+
+/* 두 번째 이미지 (Right bottom) */
+.box.right-bottom {
+  bottom: 20px;
+  right: 20px; /* 초기 위치 설정 (구석) */
+}
+
+/* 세 번째 이미지 (Right middle) */
+.box.right-middle {
+  /* 기본적으로 이미지가 구석에 위치 */
+  bottom: 60%;
+  right: 20px;
+  
+  /* 기본적으로 이미지를 작게 설정 */
+  img {
+    transform: scale(0.08); /* 기본 크기를 8%로 설정 */
+  }
+
+  /* 확대된 상태에서는 중앙으로 위치하고 크기 확대 */
+  input[type="checkbox"]:checked ~ label > img {
+    transform: scale(2); /* 확대 상태에서 크기 2배로 설정 */
+    position: fixed; /* 화면 중앙에 고정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* 화면 중앙으로 이동 + 확대 */
+  }
+}
