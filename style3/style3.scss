@@ -560,3 +560,10 @@ body{
         transform: scale(1.1); 
     }
   }
+
+  @media screen and (max-width: 480px) {
+ 
+    .opening-overlay p {
+        font-size: 1.2rem;
+    }
+  }

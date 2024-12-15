@@ -52,6 +52,16 @@ body {
     background-color: transparent;
     cursor: help;
 }
+
+.hide1{
+    background-color: black;
+}
+.hide1:hover{
+    background-color:Gainsboro;
+    cursor: help;
+    color: firebrick;
+    font-weight: 700;
+}
 .container {
     margin-left: 330px;
     margin-top: 20px;

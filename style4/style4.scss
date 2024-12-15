@@ -730,19 +730,19 @@ animation: fadeIn 2s ease-in-out forwards;
 
 
 .home-button {
-  position: fixed; /* 화면 구석에 위치하기 위해 절대 위치 지정 */
-  top: 20px; /* 화면 위쪽에서 약간 내려옴 */
-  right: 20px; /* 화면 오른쪽에서 약간 떨어짐 */
-  width: 40px; /* 버튼 크기 */
+  position: fixed;
+  top: 20px; 
+  right: 20px; 
+  width: 40px;
   height: 40px;
   background: conic-gradient(
       rgb(41, 112, 41) 0deg 90deg,
       rgb(246, 43, 43) 90deg 180deg,
       rgb(76, 76, 198) 180deg 270deg,
       rgb(255, 187, 0) 270deg 360deg
-    ); /* 흰색 배경 */
-  border-radius: 50%; /* 동그란 모양 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    );
+  border-radius: 50%; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   display: flex; 
   align-items: center;
   justify-content: center;
@@ -768,3 +768,11 @@ animation: fadeIn 2s ease-in-out forwards;
       transform: scale(1.1); 
   }
 }
+
+@media screen and (max-width: 480px) {
+ 
+  .opening-overlay p {
+      font-size: 1.2rem;
+  }
+}
+

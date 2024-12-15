@@ -328,4 +328,9 @@ a {
   100% {
     opacity: 1;
   }
+}
+@media screen and (max-width: 480px) {
+  .opening-overlay p {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=style2.css.map */

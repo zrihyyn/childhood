@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 1.1rem;
 }
 .comic-neue-regular {
     font-family: "Comic Neue", cursive;
@@ -38,7 +39,7 @@ body{
       RoyalBlue 100% 
     );
   background-repeat: no-repeat;
-    font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .text {
     position: fixed;
@@ -83,7 +84,7 @@ body{
     position: fixed;
     border: 1px solid black;
     box-shadow: 0 2px 9px rgba(0, 0, 0, 0.327);
-    z-index: 100; 
+    z-index: 900; 
     top: 8vh; 
     left: 50vw;
     margin: auto;
@@ -110,7 +111,7 @@ body{
     position: fixed;
     border: 1px solid black;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.327);
-    z-index: 100; 
+    z-index: 800; 
     top: 50vh; 
     left: 67vw;
     margin: auto;
@@ -256,3 +257,107 @@ body{
         font-size: 1rem;
         background: rgb(0, 0, 0);
         color: white;}
+
+        /* 기본 스타일은 유지한 채 미디어쿼리를 추가합니다 */
+
+
+  @media screen and (max-width: 768px) {
+    body{
+        background-color: #bfe1ff;
+    }
+    .text {
+      top: 10vh;
+      left: 5vw;
+      width: 90vw;
+      transform: rotate(3deg);
+      font-size: 0.9rem;
+    }
+  
+    .ad {
+      top: 45vh;
+      left: 5vw;
+      width: 90vw;
+      padding: 10px;
+      transform: rotate(-5deg);
+    }
+  
+    .thanksto {
+      top: 2vh;
+      left: 30vw;
+      width: 40vw;
+      height: auto;
+      font-size: 0.8rem;
+    }
+  
+    .colophon {
+      top: 60vh;
+      left: 30vw;
+      width: 60vw;
+      height: auto;
+      transform: rotate(10deg);
+    }
+  
+    .home-button {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .down {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    *{
+        font-size: 1rem;
+    }
+   body{
+    background-color: #bfe1ff;
+   }
+
+    .text {
+      top: 5vh;
+      left: 8vw;
+      width: 44vw;
+      height: 30vh;
+      transform: rotate(0deg);
+      padding: 10px;
+      font-size: 0.7rem;
+    }
+  
+    .ad {
+      top: 42vh;
+      left: 5vw;
+      width: 90vw;
+      padding: 8px;
+      transform: rotate(-3deg);
+    }
+  
+    .thanksto {
+      top: 12vh;
+      left: 52vw;
+      width: 40vw;
+      height: 25vh;
+      font-size: 0.85rem;
+      transform: rotate(-6deg);
+    }
+  
+    .colophon {
+      top: 55vh;
+      left: 7vw;
+      width: 85vw;
+      height: 40vh;
+      transform: rotate(0deg);
+    }
+  
+    .home-button {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .down {
+      font-size: 0.7rem;
+      padding: 5px;
+    }
+  }
+  
