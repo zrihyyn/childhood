@@ -40,6 +40,7 @@ body{
     );
   background-repeat: no-repeat;
   font-size: 1.5rem;
+  pointer-events: none;  
 }
 .text {
     position: fixed;
@@ -143,7 +144,9 @@ body{
     color: black;
 }
 
-
+.text, .ad, .thanksto, .colophon {
+    pointer-events: auto;  
+  }
 .opening-overlay {
     position: fixed; 
     top: 0;

@@ -30,6 +30,7 @@ body {
   background: repeating-linear-gradient(to right, #ff0f0f, #ff0f0f 10px, #ffffff 10px, #ffffff 20px) 0 0/100vw 14%, linear-gradient(to bottom, #bfe1ff 0%, #bfe1ff 92%, RoyalBlue 92%, RoyalBlue 100%);
   background-repeat: no-repeat;
   font-size: 1.5rem;
+  pointer-events: none;
 }
 
 .text {
@@ -135,6 +136,10 @@ body {
   background-color: yellow;
   text-decoration: none;
   color: black;
+}
+
+.text, .ad, .thanksto, .colophon {
+  pointer-events: auto;
 }
 
 .opening-overlay {
